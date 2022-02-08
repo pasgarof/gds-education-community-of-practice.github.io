@@ -9,11 +9,11 @@ permalink: /team/
 # Team members
 
 
-Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors).
+Jump to [PIs](#pis), [speakers](#speakers), [technical support](#technical-support).
 
 ## PIs
 {% assign number_printed = 0 %}
-{% for member in site.data.team_members %}
+{% for member in site.data.pis %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
@@ -22,42 +22,12 @@ Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-stu
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="33%" style="float: left" />
   <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  {% endif %}
-
-  </ul>
+  <i>{{ member.info }} </i>
+  <br>Email: <{{ member.email }}>
+  <br>Web: <{{ member.website }}>
+  <br>Affiliation: {{ member.aff }}
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
@@ -76,7 +46,7 @@ Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-stu
 ## Speakers
 
 {% assign number_printed = 0 %}
-{% for member in site.data.alumni_members %}
+{% for speaker in site.data.speakers %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
@@ -85,9 +55,8 @@ Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-stu
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.duration }} <br> Role: {{ member.info }}</i>
+  <h4>{{ speaker.name }}</h4>
+  <strong>Bio:</strong> <i> {{ speaker.bio }}</i>
   <ul style="overflow: hidden">
 
   </ul>
@@ -106,5 +75,12 @@ Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-stu
 </div>
 {% endif %}
 
-## Administrative Support
-<a href="mailto:Rijsewijk@Physics.LeidenUniv.nl">Ellie van Rijsewijk</a> is helping us (and other groups) with administration.
+## Technical Support
+<div class="col-sm-6 clearfix">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/zenginoglu.jpg" class="img-responsive" width="33%" style="float: left" />
+  <h4>Anıl Zenginoğlu</h4>
+  <i> Works on wave equations, black holes, gravitational waves, and null infinity.</i>
+  <br>Email: <a href="mailto:anil@umd.edu">anil@umd.edu</a>
+  <br>Web: <a href="https://anilzen.github.io">anilzen.github.io</a>
+  <br>Affiliation: IPST at UMD
+</div>

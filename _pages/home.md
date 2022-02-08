@@ -16,8 +16,7 @@ The Data Science Education Community of Practice (DSECOP), a program funded by t
 
 
 
-<div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
-    <!-- Menu -->
+<!-- <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
@@ -26,7 +25,6 @@ The Data Science Education Community of Practice (DSECOP), a program funded by t
         <li data-target="#carousel" data-slide-to="4"></li>
     </ol>
 
-    <!-- Items -->
     <div class="carousel-inner" markdown="0">
         <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/index.jpg" alt="Slide 1" />
@@ -49,7 +47,7 @@ The Data Science Education Community of Practice (DSECOP), a program funded by t
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div> -->
 
 
 To this end, we organize events such as webinars, bootcamps, and more (see [Events](events)).

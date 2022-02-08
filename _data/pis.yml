@@ -1,0 +1,28 @@
+- name: William Ratcliff
+  photo: ratcliff.jpg
+  info: Uses neutron scattering and AI to explore superconducting materials that might be useful for quantum computers.
+  website: https://www.nist.gov/people/william-d-ratcliff
+  email: wratclif@umd.edu
+  aff: NIST
+
+- name: Wolfgang Losert
+  photo: losert.jpg
+  info: Studies dynamical properties of complex systems at the convergence of physics and biology with special focus on cell motion and collective behavior to understand cancer.
+  website: https://losertlab.umd.edu/
+  email: wlosert@umd.edu
+  aff: IPST and Physics at UMD
+  
+- name: Marilena Longobardi
+  photo: longobardi.jpg
+  info: Coordinator at NCCR SPIN.
+  website: https://www.nccr-spin.ch/news/maria-longobardi-is-our-new-coordinator
+  email: marialongobardi@gmail.com
+  aff: APS, NCCR
+  
+- name: Alexis Knaub
+  photo: knaub.webp
+  info: Consultant, evaluator, and researcher in postsecondary STEM education.
+  website: https://www.alexis.science/
+  email: avknaub@gmail.com
+  aff: AAPT
+  
